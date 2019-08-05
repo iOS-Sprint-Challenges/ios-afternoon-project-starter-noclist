@@ -68,3 +68,9 @@ After completing this assignment, you should...
     * set the `text` properties of the three outlets to their respective values from the `agent` property.
     * If the agent is compromised, change the background of the view to the same red color you used in the tableview cell.
         * `view.backgroundColor = `
+
+## Screenshots
+
+![NOC List Table View](https://raw.githubusercontent.com/LambdaSchool/ios-afternoon-project-starter-noclist/master/NOC-List-Table-View.png)
+
+![NOC List Detail View](https://raw.githubusercontent.com/LambdaSchool/ios-afternoon-project-starter-noclist/master/NOC-List-Detail-View.png)
