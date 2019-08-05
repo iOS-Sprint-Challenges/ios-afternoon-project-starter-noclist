@@ -59,12 +59,17 @@ After completing this assignment, you should...
     * `"\(compromisedCount()) agents compromised"`
     * The above string will call the function referenced within `\()` and once it returns an answer, that answer will be converted to a string and placed in the position where the interpolation is within the larger string.
 8. At this point, the app should be runnable and should display the agents in a tableview. Run the app in the simulator to make sure the app's feature set is stable.
+9. Add the following to the `prepare(for:sender:)` method:
+    * `let indexPath = tableView.indexPathForSelectedRow!` - This will determine the index path of the selected row
+    * `let agent = agents[indexPath.row]` - This will use that index path to determine the appropriate agent to send
+    *  `let agentDetailVC = segue.destination as! AgentDetailViewController` - This will get a handle to the Agent Detail View Controller
+    * `agentDetailVC.agent = agent` - This will pass the agent to the other view controller (note, this property doesn't exist yet; you'll add it in step 10).
 
 #### In `AgentDetailViewController.swift`
-9. Create an `agent` property of the following type:
+10. Create an `agent` property of the following type:
     * `(coverName: String, realName: String, accessLevel: Int, compromised: Bool)`
     * Notice this is the same type as the members of the `agents` array in the other view controller.
-10. In the `viewDidLoad` method:
+11. In the `viewDidLoad` method:
     * set the `text` properties of the three outlets to their respective values from the `agent` property.
     * If the agent is compromised, change the background of the view to the same red color you used in the tableview cell.
         * `view.backgroundColor = `
