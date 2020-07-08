@@ -37,6 +37,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		045DAF4424B5F06F0046E116 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				CEC31CCB229759CC007F6F4A /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		045DAF4524B5F07A0046E116 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CEC31CD9229759FA007F6F4A /* NOCListTableViewController.swift */,
+				CE86AB7C22F880D700E7DF04 /* AgentDetailViewController.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
 		CEC31CBB229759CC007F6F4A = {
 			isa = PBXGroup;
 			children = (
@@ -57,9 +74,8 @@
 			isa = PBXGroup;
 			children = (
 				CEC31CC7229759CC007F6F4A /* AppDelegate.swift */,
-				CEC31CD9229759FA007F6F4A /* NOCListTableViewController.swift */,
-				CE86AB7C22F880D700E7DF04 /* AgentDetailViewController.swift */,
-				CEC31CCB229759CC007F6F4A /* Main.storyboard */,
+				045DAF4524B5F07A0046E116 /* View Controller */,
+				045DAF4424B5F06F0046E116 /* Storyboard */,
 				CEC31CCE229759CC007F6F4A /* Assets.xcassets */,
 				CEC31CD0229759CC007F6F4A /* LaunchScreen.storyboard */,
 				CEC31CD3229759CC007F6F4A /* Info.plist */,
@@ -287,6 +303,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N3P8URX7UV;
 				INFOPLIST_FILE = NOCList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -304,6 +321,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N3P8URX7UV;
 				INFOPLIST_FILE = NOCList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
