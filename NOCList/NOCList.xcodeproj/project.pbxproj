@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		045DAF4D24B5F21B0046E116 /* NOCListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045DAF4C24B5F21B0046E116 /* NOCListTests.swift */; };
 		CE86AB7D22F880D700E7DF04 /* AgentDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE86AB7C22F880D700E7DF04 /* AgentDetailViewController.swift */; };
 		CEC31CC8229759CC007F6F4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC31CC7229759CC007F6F4A /* AppDelegate.swift */; };
 		CEC31CCD229759CC007F6F4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEC31CCB229759CC007F6F4A /* Main.storyboard */; };
@@ -15,7 +16,20 @@
 		CEC31CDA229759FA007F6F4A /* NOCListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC31CD9229759FA007F6F4A /* NOCListTableViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		045DAF4F24B5F21B0046E116 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEC31CBC229759CC007F6F4A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEC31CC3229759CC007F6F4A;
+			remoteInfo = NOCList;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		045DAF4A24B5F21B0046E116 /* NOCListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NOCListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		045DAF4C24B5F21B0046E116 /* NOCListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NOCListTests.swift; sourceTree = "<group>"; };
+		045DAF4E24B5F21B0046E116 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE86AB7C22F880D700E7DF04 /* AgentDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentDetailViewController.swift; sourceTree = "<group>"; };
 		CEC31CC4229759CC007F6F4A /* NOCList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NOCList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEC31CC7229759CC007F6F4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -27,6 +41,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		045DAF4724B5F21B0046E116 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CEC31CC1229759CC007F6F4A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -54,10 +75,20 @@
 			path = "View Controller";
 			sourceTree = "<group>";
 		};
+		045DAF4B24B5F21B0046E116 /* NOCListTests */ = {
+			isa = PBXGroup;
+			children = (
+				045DAF4C24B5F21B0046E116 /* NOCListTests.swift */,
+				045DAF4E24B5F21B0046E116 /* Info.plist */,
+			);
+			path = NOCListTests;
+			sourceTree = "<group>";
+		};
 		CEC31CBB229759CC007F6F4A = {
 			isa = PBXGroup;
 			children = (
 				CEC31CC6229759CC007F6F4A /* NOCList */,
+				045DAF4B24B5F21B0046E116 /* NOCListTests */,
 				CEC31CC5229759CC007F6F4A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -66,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				CEC31CC4229759CC007F6F4A /* NOCList.app */,
+				045DAF4A24B5F21B0046E116 /* NOCListTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -86,6 +118,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		045DAF4924B5F21B0046E116 /* NOCListTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 045DAF5124B5F21B0046E116 /* Build configuration list for PBXNativeTarget "NOCListTests" */;
+			buildPhases = (
+				045DAF4624B5F21B0046E116 /* Sources */,
+				045DAF4724B5F21B0046E116 /* Frameworks */,
+				045DAF4824B5F21B0046E116 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				045DAF5024B5F21B0046E116 /* PBXTargetDependency */,
+			);
+			name = NOCListTests;
+			productName = NOCListTests;
+			productReference = 045DAF4A24B5F21B0046E116 /* NOCListTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		CEC31CC3229759CC007F6F4A /* NOCList */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CEC31CD6229759CC007F6F4A /* Build configuration list for PBXNativeTarget "NOCList" */;
@@ -109,10 +159,14 @@
 		CEC31CBC229759CC007F6F4A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1020;
+				LastSwiftUpdateCheck = 1150;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "Lambda School";
 				TargetAttributes = {
+					045DAF4924B5F21B0046E116 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = CEC31CC3229759CC007F6F4A;
+					};
 					CEC31CC3229759CC007F6F4A = {
 						CreatedOnToolsVersion = 10.2.1;
 					};
@@ -132,11 +186,19 @@
 			projectRoot = "";
 			targets = (
 				CEC31CC3229759CC007F6F4A /* NOCList */,
+				045DAF4924B5F21B0046E116 /* NOCListTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		045DAF4824B5F21B0046E116 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CEC31CC2229759CC007F6F4A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -150,6 +212,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		045DAF4624B5F21B0046E116 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				045DAF4D24B5F21B0046E116 /* NOCListTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CEC31CC0229759CC007F6F4A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -161,6 +231,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		045DAF5024B5F21B0046E116 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEC31CC3229759CC007F6F4A /* NOCList */;
+			targetProxy = 045DAF4F24B5F21B0046E116 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		CEC31CCB229759CC007F6F4A /* Main.storyboard */ = {
@@ -182,6 +260,48 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		045DAF5224B5F21B0046E116 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N3P8URX7UV;
+				INFOPLIST_FILE = NOCListTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.productions.fritzgt.NOCListTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NOCList.app/NOCList";
+			};
+			name = Debug;
+		};
+		045DAF5324B5F21B0046E116 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N3P8URX7UV;
+				INFOPLIST_FILE = NOCListTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.productions.fritzgt.NOCListTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NOCList.app/NOCList";
+			};
+			name = Release;
+		};
 		CEC31CD4229759CC007F6F4A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -337,6 +457,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		045DAF5124B5F21B0046E116 /* Build configuration list for PBXNativeTarget "NOCListTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				045DAF5224B5F21B0046E116 /* Debug */,
+				045DAF5324B5F21B0046E116 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		CEC31CBF229759CC007F6F4A /* Build configuration list for PBXProject "NOCList" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
