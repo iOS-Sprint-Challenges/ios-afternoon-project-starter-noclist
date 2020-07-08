@@ -41,7 +41,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="43f-4t-Byy" kind="show" id="vOu-rw-kay"/>
+                                    <segue destination="43f-4t-Byy" kind="show" identifier="AgentDetailSegue" id="vOu-rw-kay"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

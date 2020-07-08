@@ -11,6 +11,9 @@ import UIKit
 class AgentDetailViewController: UIViewController {
     
     // MARK: - Properties
+    var agent: Agent?
+    
+    //MARK: - Outlets
     
     @IBOutlet weak var coverNameLabel: UILabel!
     @IBOutlet weak var realNameLabel: UILabel!
@@ -18,5 +21,16 @@ class AgentDetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        loadViews()
     }
+    
+    private func loadViews(){
+        if let agent = agent{
+            coverNameLabel.text = agent.coverName
+            realNameLabel.text = agent.realName
+            accessLevelLabel.text = String(agent.accessLevel)
+        }
+    }
+    
+    
 }

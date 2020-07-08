@@ -83,6 +83,14 @@ class NOCListTableViewController: UITableViewController
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
+        guard let index = tableView.indexPathForSelectedRow else {return}
+        let selectedAgent = agents[index.row]
+        
+        if segue.identifier == "AgentDetailSegue"{
+            if let agentDetailVC = segue.destination as? AgentDetailViewController{
+                agentDetailVC.agent = selectedAgent
+            }
+        }
     }
     
     // MARK: - Private
