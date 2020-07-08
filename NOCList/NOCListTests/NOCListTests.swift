@@ -20,6 +20,12 @@ class NOCListTests: XCTestCase {
         XCTAssertFalse(agent.compromised)
     }
     
+    func testLoadNOCList(){
+        let tableVC = NOCListTableViewController()
+        tableVC.loadNOCList()
+
+        XCTAssertEqual(tableVC.agents.count, 11)
+    }
 
     
 
