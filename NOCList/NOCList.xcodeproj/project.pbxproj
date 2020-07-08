@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		045DAF4D24B5F21B0046E116 /* NOCListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045DAF4C24B5F21B0046E116 /* NOCListTests.swift */; };
+		045DAF5524B6075E0046E116 /* Agent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045DAF5424B6075E0046E116 /* Agent.swift */; };
 		CE86AB7D22F880D700E7DF04 /* AgentDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE86AB7C22F880D700E7DF04 /* AgentDetailViewController.swift */; };
 		CEC31CC8229759CC007F6F4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC31CC7229759CC007F6F4A /* AppDelegate.swift */; };
 		CEC31CCD229759CC007F6F4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEC31CCB229759CC007F6F4A /* Main.storyboard */; };
@@ -30,6 +31,7 @@
 		045DAF4A24B5F21B0046E116 /* NOCListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NOCListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		045DAF4C24B5F21B0046E116 /* NOCListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NOCListTests.swift; sourceTree = "<group>"; };
 		045DAF4E24B5F21B0046E116 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		045DAF5424B6075E0046E116 /* Agent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Agent.swift; sourceTree = "<group>"; };
 		CE86AB7C22F880D700E7DF04 /* AgentDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentDetailViewController.swift; sourceTree = "<group>"; };
 		CEC31CC4229759CC007F6F4A /* NOCList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NOCList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEC31CC7229759CC007F6F4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -84,6 +86,14 @@
 			path = NOCListTests;
 			sourceTree = "<group>";
 		};
+		045DAF5624B607650046E116 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				045DAF5424B6075E0046E116 /* Agent.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		CEC31CBB229759CC007F6F4A = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				CEC31CC7229759CC007F6F4A /* AppDelegate.swift */,
+				045DAF5624B607650046E116 /* Model */,
 				045DAF4524B5F07A0046E116 /* View Controller */,
 				045DAF4424B5F06F0046E116 /* Storyboard */,
 				CEC31CCE229759CC007F6F4A /* Assets.xcassets */,
@@ -225,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEC31CC8229759CC007F6F4A /* AppDelegate.swift in Sources */,
+				045DAF5524B6075E0046E116 /* Agent.swift in Sources */,
 				CE86AB7D22F880D700E7DF04 /* AgentDetailViewController.swift in Sources */,
 				CEC31CDA229759FA007F6F4A /* NOCListTableViewController.swift in Sources */,
 			);
