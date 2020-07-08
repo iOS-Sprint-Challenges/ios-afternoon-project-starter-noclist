@@ -29,6 +29,9 @@ class AgentDetailViewController: UIViewController {
             coverNameLabel.text = agent.coverName
             realNameLabel.text = agent.realName
             accessLevelLabel.text = String(agent.accessLevel)
+            if agent.compromised{
+                view.backgroundColor = UIColor(hue: 0, saturation: 0.4, brightness: 0.9, alpha: 1.0)
+            }
         }
     }
     

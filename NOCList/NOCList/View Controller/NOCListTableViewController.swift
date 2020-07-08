@@ -92,6 +92,4 @@ class NOCListTableViewController: UITableViewController
             }
         }
     }
-    
-    // MARK: - Private
 }
