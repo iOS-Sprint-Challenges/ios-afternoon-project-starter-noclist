@@ -40,18 +40,45 @@ class NOCListTableViewController: UITableViewController
         ]
     }
     
+    func reloadViews() {
+        tableView.reloadData()
+    }
+    
+    func compromisedCount() -> Int{
+        var count = 0
+        for agent in agents{
+            if agent.compromised{
+                count += 1
+            }
+        }
+        
+        return count
+    }
+    
     // MARK: - Table view data source
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return agents.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "AgentCell", for: indexPath)
+        
+        let data = agents[indexPath.row]
+        
+        cell.textLabel?.text = data.coverName
+        cell.detailTextLabel?.text = data.realName
+        
+        if data.compromised {
+            cell.backgroundColor = UIColor(hue: 0, saturation: 0.4, brightness: 0.9, alpha: 1.0)
+        }
         
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
+        return "\(compromisedCount()) agents compromised"
+    }
     // MARK: - Navigation
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
