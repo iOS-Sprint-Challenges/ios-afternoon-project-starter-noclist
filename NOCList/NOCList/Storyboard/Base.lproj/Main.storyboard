@@ -40,6 +40,7 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <accessibility key="accessibilityConfiguration" identifier="AgentReusableCell"/>
                                 <connections>
                                     <segue destination="43f-4t-Byy" kind="show" identifier="AgentDetailSegue" id="vOu-rw-kay"/>
                                 </connections>
